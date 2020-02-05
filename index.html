@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>-->
+    <script src="script.js"></script>
+    <title>meMe tExT</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <img src="https://cdn.mobilesyrup.com/wp-content/uploads/2019/01/mocking-spongebob.jpg" height=400 width=800 style="margin: auto;">
+    <div class="yomama center">
+        <label for="usertext">Provide your text:</label>
+        <input type="text" id="usertext">
+        <button type="button" onclick="memeify()" class="button">mEme iT</button><br/><br/>
+        Memeified:
+        <input id="output" readonly></input> 
+        <button class="clip-btn button" data-clipboard-target="#output">
+            <img src="https://clipboardjs.com/assets/images/clippy.svg" height=20 width=20>
+        </button>
+    </div>
+    <!-- this nonsense has to be imported after your buttons are made -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script>
+        var clippy = new ClipboardJS(".clip-btn");
+    </script>
+  </body>
+  <footer>
+      <br/><hr>
+      Copyright © Sean Beck 2020
+  </footer>
+</html>
