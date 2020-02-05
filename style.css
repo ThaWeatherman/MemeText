@@ -1,9 +1,9 @@
 .center {
-  margin: auto;
+  display: block;
   text-align: center;
-  width: 60%;
-  border: 3px solid aqua;
-  padding: 10px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -11,6 +11,8 @@
     border: none;
     font-size: 16px;
     cursor: pointer;
+    padding: 15px 32px;
+    background-color: aqua;
 }
 
 footer{
